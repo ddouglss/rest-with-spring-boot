@@ -3,19 +3,19 @@ package br.com.ddouglss.service;
 import br.com.ddouglss.exception.ResourceNotFoundException;
 import br.com.ddouglss.model.Person;
 import br.com.ddouglss.repository.PersonRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
-import java.util.logging.Logger;
 
 @Service
 public class PersonServices {
 
     private final AtomicLong counter = new AtomicLong();
-    private final Logger logger = Logger.getLogger(PersonServices.class.getName());
+    private final Logger logger = LoggerFactory.getLogger(PersonServices.class.getName());
 
     @Autowired
     PersonRepository repository;
@@ -27,7 +27,7 @@ public class PersonServices {
     }
 
     public Person findById(Long id) {
-        logger.info("Find one Person!");
+        logger.info("Finding one Person!");
 
         return repository.findById(id).orElseThrow(() -> new ResourceNotFoundException("No records found for this ID"));
     }
