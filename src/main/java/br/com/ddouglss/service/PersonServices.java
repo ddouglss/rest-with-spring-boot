@@ -1,6 +1,6 @@
 package br.com.ddouglss.service;
 
-import br.com.ddouglss.data.dto.PersonDTO;
+import br.com.ddouglss.data.dto.v1.PersonDTO;
 import br.com.ddouglss.exception.ResourceNotFoundException;
 import static br.com.ddouglss.mapper.ObjectMapper.parseListObjects;
 import static br.com.ddouglss.mapper.ObjectMapper.parseObject;

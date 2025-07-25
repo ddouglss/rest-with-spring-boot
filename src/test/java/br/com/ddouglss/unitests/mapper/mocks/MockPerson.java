@@ -3,7 +3,7 @@ package br.com.ddouglss.unitests.mapper.mocks;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.ddouglss.data.dto.PersonDTO;
+import br.com.ddouglss.data.dto.v1.PersonDTO;
 import br.com.ddouglss.model.Person;
 
 public class MockPerson {

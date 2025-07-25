@@ -1,6 +1,6 @@
 package br.com.ddouglss.controllers;
 
-import br.com.ddouglss.data.dto.PersonDTO;
+import br.com.ddouglss.data.dto.v1.PersonDTO;
 import br.com.ddouglss.service.PersonServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
